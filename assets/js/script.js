@@ -1,7 +1,7 @@
 import propiedadesEnVenta from "./propiedades_venta.js";
-import propiedadesEnAlquiler from "../js/Propiedades_alquiler.js";
-const crearCarta = (Propiedades, ventalq) => {
-  const section = document.getElementById(ventalq);
+import propiedadesEnAlquiler from "./js/Propiedades_alquiler.js";
+const crearCarta = (Propiedades, ventald) => {
+  const section = document.getElementById(ventald);
 
   const propiedadesVenta = Propiedades.slice(0, 3);
 
@@ -84,7 +84,6 @@ const crearCarta = (Propiedades, ventalq) => {
 };
 
 const init = () => {
-  console.log("Propiedades en venta:", propiedadesEnVenta);
   crearCarta(propiedadesEnVenta, "proventa");
   crearCarta(propiedadesEnAlquiler, "proalquiler");
 };
