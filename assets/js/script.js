@@ -1,5 +1,5 @@
 import propiedadesEnVenta from "./propiedades_venta.js";
-import propiedadesEnAlquiler from "./js/Propiedades_alquiler.js";
+import propiedadesEnAlquiler from "./Propiedades_alquiler.js";
 const crearCarta = (Propiedades, ventald) => {
   const section = document.getElementById(ventald);
 
