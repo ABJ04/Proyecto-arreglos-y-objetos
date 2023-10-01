@@ -1,7 +1,7 @@
 import propiedadesEnAlquiler from "./propiedades_alquiler.js";
 
-const crearCarta = (Propiedades, alquiler) => {
-  const section = document.getElementById(alquiler);
+const crearCarta = (Propiedades, venta) => {
+  const section = document.getElementById(venta);
 
   const propiedadesVenta = Propiedades.slice(0, 7);
 
@@ -61,7 +61,6 @@ const crearCarta = (Propiedades, alquiler) => {
             </section>
 
             <p class="icono-precio">$ ${Precio}</p>
-            
             
             <p class="${permitidoFumar ? "text-success " : "text-danger"}">  
             <i class="fas ${
