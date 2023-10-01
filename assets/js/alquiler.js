@@ -1,4 +1,4 @@
-import propiedadesEnAlquiler from "./Propiedades_alquiler.js";
+import propiedadesEnAlquiler from "./propiedades_alquiler.js";
 const crearCarta = (Propiedades, alquiler) => {
   const section = document.getElementById(alquiler);
 

@@ -88,7 +88,6 @@ const crearCarta = (Propiedades, venta) => {
 };
 
 const init = () => {
-  console.log("Propiedades en venta:", propiedadesEnVenta);
   crearCarta(propiedadesEnVenta, "ventaid");
 };
 

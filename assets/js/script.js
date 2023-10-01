@@ -1,9 +1,10 @@
 import propiedadesEnVenta from "./propiedades_venta.js";
 import propiedadesEnAlquiler from "./propiedades_alquiler.js";
-const crearCarta = (Propiedades, ventald) => {
-  const section = document.getElementById(ventald);
 
-  const propiedadesVenta = Propiedades.slice(0, 3);
+const crearCarta = (Propiedades, venta) => {
+  const section = document.getElementById(venta);
+
+  const propiedadesVenta = Propiedades.slice(0, 7);
 
   propiedadesVenta.forEach((Propiedades) => {
     const {
@@ -61,21 +62,25 @@ const crearCarta = (Propiedades, ventald) => {
             </section>
 
             <p class="icono-precio">$ ${Precio}</p>
-
+            
             <p class="${permitidoFumar ? "text-success " : "text-danger"}">  
-  <i class="fas ${
-    permitidoFumar ? "fa-solid fa-smoking " : "fa-solid fa-ban"
-  }" style="margin-left: 10px;"></i>
-  ${permitidoFumar ? "Permitido fumar " : "No se permite fumar"}
-</p>
-
-<p class="${permitidoMascotas ? "text-success" : "text-danger"}">
-  <i class="fas ${
-    permitidoMascotas ? "fa-solid fa-cat" : "fa-solid fa-ban"
-  }" style="margin-left: 10px;"></i>
-  ${permitidoMascotas ? "Se permiten mascotas" : "No se permiten mascotas"}
-</p>
-
+            <i class="fas ${
+              permitidoFumar ? "fa-solid fa-smoking " : "fa-solid fa-ban"
+            }" style="margin-left: 10px;"></i>
+            ${permitidoFumar ? "Permitido fumar " : "No se permite fumar"}
+          </p>
+          
+          <p class="${permitidoMascotas ? "text-success" : "text-danger"}">
+            <i class="fas ${
+              permitidoMascotas ? "fa-solid fa-cat" : "fa-solid fa-ban"
+            }" style="margin-left: 10px;"></i>
+            ${
+              permitidoMascotas
+                ? "Se permiten mascotas"
+                : "No se permiten mascotas"
+            }
+          </p>
+          
           </div> 
     </div>
     `;
