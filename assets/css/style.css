@@ -1,0 +1,67 @@
+.main-section {
+  background-image: url("../img/img-main.jpeg");
+  background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid black;
+  width: 430px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.card-img img {
+  border: 1px solid black;
+  width: 430px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-titulo {
+  margin: 7px;
+}
+
+.card-texto {
+  margin: 10px;
+}
+
+.descripcion-detalle {
+  display: flex;
+  margin: 5px;
+}
+
+.icono-ubicacion {
+  margin: 10px;
+}
+
+.icono-dormitorio {
+  margin: 5px;
+}
+
+.icono-metrosCuadrados {
+  margin: 5px;
+}
+
+.icono-baño {
+  margin: 5px;
+}
+
+.icono-precio {
+  margin: 10px;
+}
+
+.icono-smoke {
+  margin: 7px;
+  padding-top: 10px;
+}
+
+.iconos-pet {
+  margin: 7px;
+}
