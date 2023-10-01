@@ -76,7 +76,7 @@ const propiedadesEnAlquiler = [
 ];
 
 propiedadesEnAlquiler.forEach((propiedad) => {
-  propiedad.Precio = propiedad.Precio.toLocaleString("es-CL"); // Utilizamos 'es-CL' para el formato de Chile
+  propiedad.Precio = propiedad.Precio.toLocaleString("es-CL");
 });
 
 export default propiedadesEnAlquiler;
