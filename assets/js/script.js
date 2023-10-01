@@ -84,7 +84,6 @@ const crearCarta = (Propiedades, ventalq) => {
 };
 
 const init = () => {
-  console.log("Propiedades en venta:", propiedadesEnVenta);
   crearCarta(propiedadesEnVenta, "proventa");
   crearCarta(propiedadesEnAlquiler, "proalquiler");
 };
