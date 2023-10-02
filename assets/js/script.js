@@ -4,7 +4,7 @@ import propiedadesEnAlquiler from "./propiedades_alquiler.js";
 const crearCarta = (Propiedades, venta) => {
   const section = document.getElementById(venta);
 
-  const propiedadesVenta = Propiedades.slice(0, 7);
+  const propiedadesVenta = Propiedades.slice(0, 3);
 
   propiedadesVenta.forEach((Propiedades) => {
     const {
